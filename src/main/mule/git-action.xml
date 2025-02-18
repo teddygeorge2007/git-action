@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="git-actionFlow" doc:id="0767b2ec-142e-46ec-bf23-74c507401a15" >
 		<http:listener doc:name="Listener" doc:id="1b5c3aaf-16be-43a4-bdca-add8104ae67c" config-ref="HTTP_Listener_config" path="/action"/>
-		<set-payload value="#['Working fine']" doc:name="Set Payload" doc:id="3e7b778b-ab4a-406f-a1e4-32b60c77b46e" />
+		<set-payload value="#['Working fine for me']" doc:name="Set Payload" doc:id="3e7b778b-ab4a-406f-a1e4-32b60c77b46e" />
 		<logger level="INFO" doc:name="Logger" doc:id="772365b0-c093-4334-b825-7369e0e7ce96" message="#[payload]"/>
 	</flow>
 </mule>
